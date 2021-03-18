@@ -1,9 +1,9 @@
 <mat-accordion multi="true">
-  <mat-expansion-panel *ngFor = "let posts1 of posts">
+  <mat-expansion-panel *ngFor = "let i of posts">
     <mat-expansion-panel-header>
-      {{posts1.title}}
+      {{i.title}}
     </mat-expansion-panel-header>
-    {{posts1.msg}}
+    {{i.msg}}
   </mat-expansion-panel>
 </mat-accordion>
 
