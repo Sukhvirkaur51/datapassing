@@ -1,0 +1,10 @@
+<mat-accordion multi="true">
+  <mat-expansion-panel *ngFor = "let posts1 of posts">
+    <mat-expansion-panel-header>
+      {{posts1.title}}
+    </mat-expansion-panel-header>
+    {{posts1.msg}}
+  </mat-expansion-panel>
+</mat-accordion>
+
+<p *ngIf="posts.length<=0">No post added yet!!</p>
